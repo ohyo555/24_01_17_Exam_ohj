@@ -20,7 +20,7 @@ public class Main {
 
 			System.out.print("명령어 ) ");
 			String cmd = sc.nextLine().trim();
-
+			
 			int id = lastid + 1;
 
 			if (cmd.equals("등록")) {
@@ -68,7 +68,7 @@ public class Main {
 					}
 				}
 
-				if (isfindId == false) {
+				if (isfindId == false && rq.x == 0) {
 					System.out.printf("%d번 명언은 존재하지 않습니다.\n",rq.getGetid());
 					continue;
 				}
@@ -99,7 +99,7 @@ public class Main {
 					}
 				}
 
-				if (isfindId == false) {
+				if (isfindId == false && rq.x == 0) {
 					System.out.printf("%d번 명언은 존재하지 않습니다.\n",rq.getGetid());
 					continue;
 				}
@@ -121,7 +121,7 @@ public class Main {
 					}
 				}
 
-				if (isfindId == false) {
+				if (isfindId == false && rq.x == 0) {
 					System.out.printf("%d번 명언은 존재하지 않습니다.\n",rq.getGetid());
 					continue;
 				}
